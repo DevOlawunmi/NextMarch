@@ -27,7 +27,7 @@ public class SearchForProductsSteps {
 
     @Then("I click on one of the result links")
     public void i_click_on_one_of_the_result_links() {
-        
+
     }
 
 
