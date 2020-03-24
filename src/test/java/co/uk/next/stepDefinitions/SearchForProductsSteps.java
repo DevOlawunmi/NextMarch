@@ -1,13 +1,14 @@
 package co.uk.next.stepDefinitions;
 
+import co.uk.next.pages.BasePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class SearchForProductsSteps {
+public class SearchForProductsSteps extends BasePage {
     @Given("I navigate to next.co.uk")
     public void i_navigate_to_next_co_uk() {
-
+launchURL();
     }
 
     @When("I enter {string} in the search field")
