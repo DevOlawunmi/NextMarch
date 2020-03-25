@@ -16,8 +16,7 @@ Feature: Search for products
     Examples:
 
       |ProductName|
-      |Ladies shoes|
+  # |Ladies shoes|
       |Joggers|
       |Maternity|
-
-
+     # |girls hoodies|
