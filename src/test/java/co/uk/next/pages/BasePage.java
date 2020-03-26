@@ -28,5 +28,6 @@ public class BasePage extends DriverLib {
     public void waitForElementToBeDisplayed(WebElement element){
         wait = new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.visibilityOf(element));
+
     }
 }

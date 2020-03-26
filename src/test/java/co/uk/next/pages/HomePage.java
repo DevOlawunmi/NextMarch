@@ -11,6 +11,9 @@ public class HomePage extends BasePage {
     @FindBy (css = ".SearchButton")
     private WebElement searchButton;
 
+    @FindBy (className = "Content MainNavigation MegaNavEnabledNavigation")
+    private WebElement deptTab;
+
 
     public void enterProductName(String productType){
         searchField.sendKeys(productType);
@@ -20,4 +23,8 @@ public class HomePage extends BasePage {
     searchButton.click();
         return new SearchResultPage(driver);
     }
+public SearchResultPage clickOnDepartment(){
+        deptTab.click();
+        return new SearchResultPage(driver);
+}
 }
