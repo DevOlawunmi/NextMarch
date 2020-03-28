@@ -5,13 +5,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
 
-    @FindBy (xpath = "/html/body/header/div/section/section[4]/form/input[1]")
+    @FindBy (className = "SearchBox")
     private WebElement searchField;
 
     @FindBy (css = ".SearchButton")
     private WebElement searchButton;
 
-    @FindBy (className = "Content MainNavigation MegaNavEnabledNavigation")
+    @FindBy (id = "navigationitem4-4fhxgrmf7ozvfm3jc6djcbuu")
     private WebElement deptTab;
 
 
@@ -23,8 +23,8 @@ public class HomePage extends BasePage {
     searchButton.click();
         return new SearchResultPage(driver);
     }
-public SearchResultPage clickOnDepartment(){
+public TabSearchResultPage clickOnDepartment(){
         deptTab.click();
-        return new SearchResultPage(driver);
+        return new TabSearchResultPage(driver);
 }
 }

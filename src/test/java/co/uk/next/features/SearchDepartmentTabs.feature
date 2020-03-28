@@ -16,4 +16,4 @@ Feature: Customer can search for items by clicking on Tabs
 
       |Department|
       |Girls|
-      |Home|
+      #|Home|
