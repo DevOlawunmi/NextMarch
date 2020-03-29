@@ -13,14 +13,14 @@ public class SearchDeptStepDefinitions extends BasePage {
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     SearchResultPage searchResultPage = PageFactory.initElements(driver, SearchResultPage.class);
     TabSearchResultPage tabSearchResultPage = PageFactory.initElements(driver, TabSearchResultPage.class);
-   // @Given("I navigate to next.co.uk")
-   // public void i_navigate_to_next_co_uk() {
-   //     launchURL();
-   // }
+//    @Given("I navigate to next.co.uk")
+//    public void i_navigate_to_next_co_uk() {
+//        launchURL();
+//    }
 
     @When("I click on a {string}")
-    public void i_click_on_a(String string) {
-tabSearchResultPage = homePage.clickOnDepartment();
+    public void i_click_on_a(String department) {
+homePage.clickHovers();
     }
     @Then("a list of items in {string} is displayed")
     public void a_list_of_items_in_is_displayed(String string) {

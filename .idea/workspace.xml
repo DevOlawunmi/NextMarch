@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce71ebc4-f573-4951-b41f-b2dc76b661a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/next/pages/TabSearchResultPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/uk/next/pages/HoversPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/next/features/SearchDepartmentTabs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/next/features/SearchDepartmentTabs.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/next/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/next/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/next/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/next/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/uk/next/stepDefinitions/SearchDeptStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/uk/next/stepDefinitions/SearchDeptStepDefinitions.java" afterDir="false" />
     </list>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585193557132</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Locator updated">
+      <created>1585412157517</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585412157517</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -227,41 +234,42 @@
     <MESSAGE value="Search Result Page Successfully Displayed" />
     <MESSAGE value="Product Details Page Successfully Displayed" />
     <MESSAGE value="New Feature added" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Feature added" />
+    <MESSAGE value="Locator updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Locator updated" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1585193556588">
+    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1585412156937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585193556588" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1585411534675">
+    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585412156937" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1585413745618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585411534675" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1585411534675">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585413745618" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1585413745618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585411534675" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1585411534675">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585413745618" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1585413745618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585411534675" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1585411534675">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585413745618" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1585413745618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585411534675" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585413745618" />
     <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1585110738282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1585110738282" />
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1585193560039">
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1585412161585">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585193560039" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1585410139307">
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585412161585" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1585458173737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585410139307" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585458173737" />
     <state x="521" y="335" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1585110695553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

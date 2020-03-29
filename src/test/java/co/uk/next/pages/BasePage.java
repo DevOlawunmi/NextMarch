@@ -1,6 +1,7 @@
 package co.uk.next.pages;
 
 import co.uk.next.commons.DriverLib;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -29,5 +30,8 @@ public class BasePage extends DriverLib {
         wait = new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.visibilityOf(element));
 
+    }
+    public void clickLink(String linkText){
+        driver.findElement(By.linkText(linkText)).click();
     }
 }
