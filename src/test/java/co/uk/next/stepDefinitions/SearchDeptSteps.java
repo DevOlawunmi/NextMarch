@@ -20,7 +20,7 @@ public class SearchDeptSteps extends BasePage {
 
     @When("I click on a {string}")
     public void i_click_on_a(String department) {
-        
+
     }
     @Then("a list of items in {string} is displayed")
     public void a_list_of_items_in_is_displayed(String string) {
