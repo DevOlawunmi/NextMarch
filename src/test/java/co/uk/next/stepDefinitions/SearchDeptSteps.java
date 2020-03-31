@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 
-public class SearchDeptStepDefinitions extends BasePage {
+public class SearchDeptSteps extends BasePage {
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     SearchResultPage searchResultPage = PageFactory.initElements(driver, SearchResultPage.class);
     TabSearchResultPage tabSearchResultPage = PageFactory.initElements(driver, TabSearchResultPage.class);
@@ -20,7 +20,7 @@ public class SearchDeptStepDefinitions extends BasePage {
 
     @When("I click on a {string}")
     public void i_click_on_a(String department) {
-homePage.clickHovers();
+        
     }
     @Then("a list of items in {string} is displayed")
     public void a_list_of_items_in_is_displayed(String string) {

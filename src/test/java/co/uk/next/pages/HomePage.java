@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
 
     @FindBy (className = "SearchBox")
@@ -12,8 +14,8 @@ public class HomePage extends BasePage {
     @FindBy (css = ".SearchButton")
     private WebElement searchButton;
 
-    @FindBy (id = "navigationitem4-4fhxgrmf7ozvfm3jc6djcbuu")
-    private WebElement deptTab;
+    @FindBy (className = "HeaderNavigation")
+    private List <WebElement> departments;
 
 
     public void enterProductName(String productType){
@@ -25,19 +27,12 @@ public class HomePage extends BasePage {
         return new SearchResultPage(driver);
     }
 
-//    public HoversPage clickHovers(){
-//        clickLink("Hovers");
-//        return new HoversPage(driver);
-//    }
 
-    public void hoverOverFigure(int index){
+
+    public void hoverOverDepartments(int index){
         Actions actions = new Actions(driver);
+        //I'm not sure which of the action methods to select
+
     }
-//public TabSearchResultPage clickOnDepartment(){
-//        deptTab.click();
-//        return new TabSearchResultPage(driver);
-//}
-//    public void selectDepartment(String department){
-//        selectElementByVisibleText(deptTab, department);
-//    }
+
 }

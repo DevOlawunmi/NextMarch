@@ -31,7 +31,7 @@ public class BasePage extends DriverLib {
         wait.until(ExpectedConditions.visibilityOf(element));
 
     }
-    public void clickLink(String linkText){
-        driver.findElement(By.linkText(linkText)).click();
-    }
+//    public void clickLink(String linkText){
+//        driver.findElement(By.linkText(linkText)).click();
+//    }
 }
