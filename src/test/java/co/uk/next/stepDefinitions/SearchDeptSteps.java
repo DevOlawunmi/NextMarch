@@ -18,7 +18,7 @@ public class SearchDeptSteps extends BasePage {
         if(department == "Girls")
         {
             homePage.hoverOverGirlsTab();
-            homePage.clickOnBodySuit();
+         tabSearchResultPage =   homePage.clickOnBodySuit();
         }
 
 
