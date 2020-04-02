@@ -3,6 +3,7 @@ package co.uk.next.pages;
 import co.uk.next.commons.DriverLib;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BasePage extends DriverLib {
     public String BASE_URL = "https://www.next.co.uk/";
     public Select select;
+    public Actions actions;
 
     public void launchURL(){
         driver.navigate().to(BASE_URL);
@@ -31,7 +33,10 @@ public class BasePage extends DriverLib {
         wait.until(ExpectedConditions.visibilityOf(element));
 
     }
-//    public void clickLink(String linkText){
-//        driver.findElement(By.linkText(linkText)).click();
-//    }
+    public void hoverOver(WebElement element){
+        actions = new Actions(driver);
+        actions.moveToElement(element).build().perform();
+
+    }
+
 }
