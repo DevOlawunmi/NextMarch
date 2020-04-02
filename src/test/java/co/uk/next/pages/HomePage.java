@@ -14,8 +14,10 @@ public class HomePage extends BasePage {
     @FindBy (css = ".SearchButton")
     private WebElement searchButton;
 
-    @FindBy (className = "HeaderNavigation")
-    private List <WebElement> departments;
+    @FindBy (id = "navigationitem4-ldxjlssjfos7o28xq8vhxujr")
+    private WebElement girlsTab;
+    @FindBy (id = "navigationitem3-bqmr2rt24pdki20bthg5af1gf")
+    private WebElement bodySuit;
 
 
     public void enterProductName(String productType){
@@ -29,10 +31,12 @@ public class HomePage extends BasePage {
 
 
 
-    public void hoverOverDepartments(int index){
-        Actions actions = new Actions(driver);
-        //I'm not sure which of the action methods to select
-
+    public void hoverOverGirlsTab()
+    {
+        actions.moveToElement(girlsTab).build().perform();
+            }
+    public TabSearchResultPage clickOnBodySuit(){
+        actions.click();
+        return new TabSearchResultPage(driver);
     }
-
 }
