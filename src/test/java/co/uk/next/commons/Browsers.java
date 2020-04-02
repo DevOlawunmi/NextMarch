@@ -8,24 +8,37 @@ import java.util.concurrent.TimeUnit;
 
 public class Browsers extends DriverLib {
 
-    private WebDriver initChrome(){
+   private WebDriver initChrome(){
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
-   //     private WebDriver initHeadlessChrome() {
-  //     WebDriverManager.chromedriver().setup();
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--disable-gpu","--headless");
-//        return new ChromeDriver();
-//    }
-//    private WebDriver initFirefox()
-//    {
-//        WebDriverManager.firefoxdriver().setup();
-//        return new FirefoxDriver();
-//    }
+    private WebDriver initHeadlessChrome() {
+        WebDriverManager.chromedriver().setup();
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-gpu","--headless");
+        return new ChromeDriver(options);
+    }
+
+    private WebDriver initFirefox()
+    {
+        WebDriverManager.firefoxdriver().setup();
+        return new FirefoxDriver();
+    }
+
+
 public void launchBrowser(String browser){
         switch (browser){
             case "Chrome":
+                driver = initChrome();
+                break;
+            case "Firefox":
+                driver = initFirefox();
+                break;
+            case "HeadlessChrome":
+                driver = initHeadlessChrome();
+                break;
+            default:
                 driver = initChrome();
                 break;
         }
