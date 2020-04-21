@@ -14,11 +14,11 @@ public class SearchDeptSteps extends BasePage {
     TabSearchResultPage tabSearchResultPage = PageFactory.initElements(driver, TabSearchResultPage.class);
 
     @When("I click on a {string}")
-    public void i_click_on_a(String department) {
+    public void i_click_on_a(String department)  {
         if(department == "Girls")
         {
             homePage.hoverOverGirlsTab();
-         tabSearchResultPage =   homePage.clickOnBodySuit();
+        // tabSearchResultPage =   homePage.clickOnBodySuit();
         }
 
 

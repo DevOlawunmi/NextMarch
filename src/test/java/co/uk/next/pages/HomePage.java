@@ -33,7 +33,8 @@ public class HomePage extends BasePage {
 
     public void hoverOverGirlsTab()
     {
-        actions.moveToElement(girlsTab).build().perform();
+      //  actions.moveToElement(girlsTab).build().perform();
+        hoverOver(girlsTab);
             }
     public TabSearchResultPage clickOnBodySuit(){
         actions.click();

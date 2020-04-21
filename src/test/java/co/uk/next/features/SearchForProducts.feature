@@ -1,3 +1,4 @@
+@ignore
 Feature: Search for products
   As a user
   I want to search for a product
@@ -18,5 +19,5 @@ Feature: Search for products
       |ProductName|
   # |Ladies shoes|
       |Joggers|
-      |Maternity|
+#      |Maternity|
      # |girls hoodies|
