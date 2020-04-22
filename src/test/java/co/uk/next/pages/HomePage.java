@@ -14,10 +14,11 @@ public class HomePage extends BasePage {
     @FindBy (css = ".SearchButton")
     private WebElement searchButton;
 
-    @FindBy (id = "navigationitem4-ldxjlssjfos7o28xq8vhxujr")
+    @FindBy (linkText = "Girls")
     private WebElement girlsTab;
     @FindBy (id = "navigationitem3-bqmr2rt24pdki20bthg5af1gf")
     private WebElement bodySuit;
+
 
 
     public void enterProductName(String productType){
@@ -31,13 +32,9 @@ public class HomePage extends BasePage {
 
 
 
-    public void hoverOverGirlsTab()
+    public TabSearchResultPage clickOnGirlsTab()
     {
-      //  actions.moveToElement(girlsTab).build().perform();
-        hoverOver(girlsTab);
-            }
-    public TabSearchResultPage clickOnBodySuit(){
-        actions.click();
-        return new TabSearchResultPage(driver);
+      girlsTab.click();
+      return new TabSearchResultPage(driver);
     }
 }
